@@ -1,0 +1,21 @@
+{
+  "@pnp/generator-spfx": {
+    "framework": "none",
+    "pnpFramework": "none.plus",
+    "pnp-libraries": [],
+    "pnp-ci": [],
+    "pnp-vetting": [],
+    "spfxenv": "spo"
+  },
+  "@microsoft/generator-sharepoint": {
+    "environment": "spo",
+    "framework": "none",
+    "isCreatingSolution": true,
+    "version": "1.8.2",
+    "libraryName": "deploydemo",
+    "libraryId": "92f70176-3b5d-4b08-aed3-c9aa460ba834",
+    "packageManager": "npm",
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
