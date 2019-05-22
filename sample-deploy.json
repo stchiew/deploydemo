@@ -1,0 +1,6 @@
+{
+  "username": "provide your username here",
+  "password": "provide your password here",
+  "tenant": "provide your tenant name here <do not include sharepoint.com>",
+  "catalogSite": "provide your site Url here <sites/xxxxxx>"
+}
