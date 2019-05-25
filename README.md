@@ -8,6 +8,12 @@ Sample webpart for experimenting with deployment task
 | ------- | ------------ | --------------- |
 | 1.0.0   | May 31, 2019 | Initial release |
 
+### Usage
+
+- run npm version <major,minor or patch>
+- run gulp dist
+- run gulp upload-app-pkg
+
 ### Features
 
 - npm version

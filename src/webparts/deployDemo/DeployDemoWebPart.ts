@@ -1,5 +1,8 @@
 import { Version } from "@microsoft/sp-core-library";
-import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
+import {
+  BaseClientSideWebPart,
+  PropertyPaneLabel
+} from "@microsoft/sp-webpart-base";
 import {
   IPropertyPaneConfiguration,
   PropertyPaneTextField
@@ -32,7 +35,7 @@ export default class DeployDemoWebPart extends BaseClientSideWebPart<
             <ul>
               <li>One</li>
               <li>${this.manifest.version}</li>
-              li></li>
+              <li>Use the config pan to display version and other info</li>
             </ul>
           </div>
         </div>
@@ -56,6 +59,21 @@ export default class DeployDemoWebPart extends BaseClientSideWebPart<
               groupFields: [
                 PropertyPaneTextField("description", {
                   label: strings.DescriptionFieldLabel
+                })
+              ]
+            }
+          ]
+        },
+        {
+          header: {
+            description: "About this webpart"
+          },
+          groups: [
+            {
+              groupName: "Package Version",
+              groupFields: [
+                PropertyPaneLabel("emptyLabel", {
+                  text: this.manifest.version.toString()
                 })
               ]
             }
